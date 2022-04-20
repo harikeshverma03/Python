@@ -1,0 +1,27 @@
+Learning rate = 0.00005 for 200 train test split = 0.20 loss = mae 
+Learning rate = 0.00001 for 100 train test split = 0.20 loss = mae 
+Learning rate = 0.000005 for 100 train test split = 0.20 loss = mae 
+0.009453501316694594 0.994704874076683 
+
+2.319322501720081 0.9947048740623722 
+
+3.2959467831763187 
+
+Learning rate = 0.00005 for 200 train test split = 0.20 loss = mae 
+Learning rate = 0.00001 for 100 train test split = 0.20 loss = mae 
+Learning rate = 0.000005 for 100 train test split = 0.20 loss = mae 
+0.010523702494934641 0.9946564631500374 
+
+2.581885596812855 0.994656462315693 
+
+3.884335349228438 
+
+Learning rate = 0.00005 for 200 train test split = 0.20 loss = mae 
+Learning rate = 0.00001 for 100 train test split = 0.20 loss = mae 
+Learning rate = 0.000005 for 100 train test split = 0.20 loss = mae 
+0.008603168835092614 0.9963163740715498 
+
+2.110700803167169 0.9963163749761176 
+
+3.318022873465943 
+

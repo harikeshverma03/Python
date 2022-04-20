@@ -1,0 +1,2 @@
+Learning rate = 0.0001 train test split = 0.30 loss = mae 
+Learning rate = 0.00001 train test split = 0.30 loss = mae 

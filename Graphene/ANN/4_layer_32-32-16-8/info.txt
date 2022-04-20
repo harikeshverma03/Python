@@ -1,0 +1,9 @@
+Learning rate = 0.001 for 200 train test split = 0.10  validation_split = 0.1 of train loss = mse batch size = 4
+Learning rate = 0.0001 for 400 train test split = 0.10 validation_split = 0.1 of train loss = mse 
+Learning rate = 0.00001 for 400 train test split = 0.10 loss = mae 
+2.1788906445157603e-05 0.9982186520212974 
+
+1.3115135830567812 0.9982186495976624 
+
+1.4600706808981991 
+

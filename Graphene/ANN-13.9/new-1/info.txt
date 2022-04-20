@@ -1,0 +1,15 @@
+Learning rate = 0.001 train test split = 0.20 loss = mse validation split - 0.1 of training for 200 epochs
+Learning rate = 0.0001 train test split = 0.20 loss = mse for 400 epochs
+0.0005842364649193185 0.9897410515787126 
+
+169.00114789050545 0.940515680059384 
+
+8.015875782849216 
+
+The errors on train dataset are 
+0.0005795004414709988 0.9920063093907515 
+
+29.368510496963363 0.9920063102285096 
+
+4.092498820487401 
+

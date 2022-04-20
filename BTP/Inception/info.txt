@@ -1,0 +1,3 @@
+[0.11401739716529846, 0.9798449873924255] 
+
+Learning rate = 0.0001 train test split = 0.20 loss = categorical cross entropy optimizer = adam

@@ -1,0 +1,71 @@
+1-based indexing
+
+dp[i] = max(dp[i-1], dp[i-w-2]+V[i]) if i-w-2 > 0 & ceil(sqrt(V[i])) <= W
+	dp[i-1] if ceil(sqrt(V[i])) > W & i > 1
+	max(V[i], dp[i-1]) if i-w-2 <= 0 & ceil(sqrt(V[i])) <= W & i > 1
+	V[i] if i == 1 & ceil(sqrt(V[i])) <= W &
+	0 otherwise
+
+
+
+
+
+
+function attackRec(V, n, W, i, dp, prev)
+	if dp[i] != -1
+		return dp[i]
+	end if
+
+	dp[i] = prev[i] = 0
+	w = ceil(sqrt(V[i]))
+	
+	if w > W then
+		if i > 1 then
+			dp[i], prev[i] = attackRec(i-1)
+		end if
+		return dp[i], prev[i]
+	end if
+
+	if i == 1 then
+		dp[i] = V[i]
+		return dp[i], 1
+	end if 
+
+	attackDp, attackPrev = attackRec(i-1)
+	currAttck = attackPrev
+	
+	if i > (w+2) then
+		attackDp2, attackPrev2 = attackRec(i-w-2)
+		if attackDp > V[i] + attackDp2
+			dp[i] = attackDp
+			prev[i] = attackPrev
+		else
+			dp[i] = V[i]+attackDp2
+			prev[i] = attackPrev2
+			currAttck = i
+		endif
+	else
+		if attackDp > V[i]
+			dp[i] = attackDp
+			prev[i] = attackPrev
+		else
+			dp[i] = V[i]
+			prev[i] = 0
+			currAttck = i
+		endif
+	end if
+
+	return dp[i], currAttck
+end function
+
+
+
+
+
+ans, lastAttck = attackRec(n)
+index = lastAttck
+while index > 0 do
+	tis.add(index)
+	ws.add(ceil(sqrt(V[index])))
+	index = prev[index]
+end while
